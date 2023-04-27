@@ -1,0 +1,10 @@
+.Summary {
+    max-width: 1330px;
+    width: calc(100% - 90px);
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
