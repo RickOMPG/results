@@ -19,7 +19,7 @@ function Information(props) {
                 <div className='Summary-item__icon'>{summaryIcon}</div>
                 <p className='Summary-item__text'>{summaryText}</p>
             </div>
-        <p className='Summary-item__note'>{summaryNote}/100</p>
+        <p className='Summary-item__note'>{summaryNote} <span> / 100</span></p>
         </div>
     );
 }

@@ -6,6 +6,7 @@ function Summary() {
 
   return (
     <div className="Summary">
+      <span className="Summary-title">Summary</span>
       <Information
         color='orange'
         summaryIcon='Icon'
@@ -30,6 +31,7 @@ function Summary() {
         summaryText='Visual'
         summaryNote={72}
       />
+      <button>Continue</button>
     </div>
   );
 }

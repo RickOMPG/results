@@ -5,9 +5,11 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
 
+.Summary > * {
+    font-size: 18px;
 }
 
 .Summary-item {
@@ -15,6 +17,9 @@
     align-items: center;
     justify-content: space-between;
 
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 10px 0;
     width: 100%;
 }
 
@@ -27,18 +32,36 @@
     margin-right: 10px;
 }
 
+.Summary-item__note span{
+    color: hsl(236.67deg 9.68% 63.53%);
+}
+
 .Summary--orange {
     color: hsl(0, 100%, 67%);
+    background-color: hsl(6deg 100% 98.04%);
 }
 
 .Summary--yellow {
     color: hsl(39, 100%, 56%);
+    background-color: hsl(41.54deg 100% 97.45%);
 }
 
 .Summary--green {
     color: hsl(166, 100%, 37%);
+    background-color: hsl(173.33deg 52.94% 96.67%);
 }
 
 .Summary--blue {
     color: hsl(234, 85%, 45%);
+    background-color: hsl(240deg 71.43% 97.25%);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+
+    color: #FFF;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    padding: 10px 0;
 }
