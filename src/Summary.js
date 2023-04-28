@@ -5,8 +5,8 @@ import Information from "./Information"
 function Summary() {
 
   return (
-    <div className="Summary">
-      <span className="Summary-title">Summary</span>
+    <div className="summary">
+      <span className="summary-title">Summary</span>
       <Information
         color='orange'
         summaryIcon='Icon'
