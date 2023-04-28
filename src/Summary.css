@@ -27,18 +27,18 @@
     margin-right: 10px;
 }
 
-.Summary-item__orange {
+.Summary--orange {
     color: hsl(0, 100%, 67%);
 }
 
-.Summary-item__yellow {
+.Summary--yellow {
     color: hsl(39, 100%, 56%);
 }
 
-.Summary-item__green {
+.Summary--green {
     color: hsl(166, 100%, 37%);
 }
 
-.Summary-item__blue {
+.Summary--blue {
     color: hsl(234, 85%, 45%);
 }

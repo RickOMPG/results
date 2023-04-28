@@ -8,27 +8,27 @@ function Summary() {
     <div className="Summary">
       <Information
         color='orange'
-        SummaryIcon='Icon'
-        SummaryText='Reaction'
-        SummaryNote='80/100'
+        summaryIcon='Icon'
+        summaryText='Reaction'
+        summaryNote={80}
       />
       <Information
         color='yellow'
-        SummaryIcon='Icon'
-        SummaryText='Memory'
-        SummaryNote='92/100'
+        summaryIcon='Icon'
+        summaryText='Memory'
+        summaryNote={92}
       />
       <Information
         color='green'  
-        SummaryIcon='Icon'
-        SummaryText='Verbal'
-        SummaryNote='61/100'
+        summaryIcon='Icon'
+        summaryText='Verbal'
+        summaryNote={61}
       />
       <Information
         color='blue'
-        SummaryIcon='Icon'
-        SummaryText='Visual'
-        SummaryNote='72/100'
+        summaryIcon='Icon'
+        summaryText='Visual'
+        summaryNote={72}
       />
     </div>
   );

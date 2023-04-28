@@ -3,27 +3,23 @@ import classNames from "classnames";
 
 function Information(props) {
 
-    const SummaryStyle = classNames ({
-        "Summary-item": true,
-        "Summary-item__orange": props.color === "orange",
-        "Summary-item__yellow": props.color === "yellow",
-        "Summary-item__green": props.color === "green",
-        "Summary-item__blue": props.color === "blue",
+    const SummaryStyle = classNames ( "Summary-item", {
+        "Summary--orange": props.color === "orange",
+        "Summary--yellow": props.color === "yellow",
+        "Summary--green": props.color === "green",
+        "Summary--blue": props.color === "blue",
     })
 
-
-    let SummaryIcon = props.SummaryIcon;
-    let SummaryText = props.SummaryText;
-    let SummaryNote = props.SummaryNote;
+    const { summaryIcon, summaryText, summaryNote } = props;
 
 
     return (
         <div className={SummaryStyle}>
             <div className="Summary-item__both">
-                <div className='Summary-item__icon'>{SummaryIcon}</div>
-                <p className='Summary-item__text'>{SummaryText}</p>
+                <div className='Summary-item__icon'>{summaryIcon}</div>
+                <p className='Summary-item__text'>{summaryText}</p>
             </div>
-        <p className='Summary-item__note'>{SummaryNote}</p>
+        <p className='Summary-item__note'>{summaryNote}/100</p>
         </div>
     );
 }
