@@ -5,9 +5,11 @@ import Note from './Note';
 
 function Card() {
     return (
-        <div className='card'>
-            <Note/>
-            <Summary/>
+        <div className='container'>
+            <div className='card'>
+                <Note/>
+                <Summary/>
+            </div>
         </div>
     );
 }

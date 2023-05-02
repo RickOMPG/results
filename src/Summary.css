@@ -1,5 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 600px;
+    width: calc(100% - 90px);
+    height: 100vh;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 5px 2px #00000026;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
 .summary {
-    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,21 +32,55 @@
 }
 
 .note {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    color: #FFF;
+
+    border-radius: 25px;
+    height: 100%;
     flex: .5;
+    padding: 25px;
+
+    text-align: center;
 }
 
-.card {
-    max-width: 1330px;
-    width: calc(100% - 90px);
-    height: 100vh;
-    margin: auto;
+.note-grade{
+    background: rgb(78,33,202);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(0, 0, 0, 0) 100%);
+    color: hsl(236.67deg 9.68% 63.53%);
+    border-radius: 50%;
+
+    margin: 25px auto;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-.summary > * {
-    font-size: 18px;
+.note-grade span{
+    display: block;
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 800;
+}
+
+
+.note-subtext{
+    color: hsl(236.67deg 9.68% 63.53%);
+}
+
+.note-subtext span{
+    color: #FFF;
+    font-size: 25px;
+
+}
+
+.note-title,
+.summary-title{
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .summary-item {
@@ -32,7 +91,6 @@
     border-radius: 10px;
     padding: 0 10px;
     margin: 10px 0;
-    width: 100%;
 }
 
 .summary-item__both{
@@ -77,3 +135,5 @@ button {
     border-radius: 25px;
     padding: 15px 0;
 }
+
+
